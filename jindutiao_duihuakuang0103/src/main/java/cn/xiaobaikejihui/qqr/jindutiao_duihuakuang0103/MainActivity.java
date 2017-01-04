@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
         progressBar= (ProgressBar) findViewById(R.id.progressBar);
         Button bt= (Button) findViewById(R.id.button);
         bt.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        
 
         Button bt2= (Button) findViewById(R.id.button2);
         bt2.setOnClickListener(new View.OnClickListener() {
