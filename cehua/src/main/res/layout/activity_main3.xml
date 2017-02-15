@@ -73,13 +73,13 @@
         android:id="@+id/cz_hj" />
 
     <Button
-        android:text="Button"
+        android:text="一号站台"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/zt_1" />
 
     <Button
-        android:text="Button"
+        android:text="二号站台"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/zt_2" />
