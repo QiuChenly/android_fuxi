@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    tools:context="cn.xiaobaikejihui.qqr.bisai_lianxi.MainActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/sxkongjian">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:id="@+id/shuaxingzhi"/>
+            
+            
+        </LinearLayout>
+        
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <VideoView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/sxkongjian"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/videoView2" />
+
+    <Button
+        android:text="播放视频"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sxkongjian"
+        android:layout_toRightOf="@+id/videoView2"
+        android:id="@+id/bofangshiping" />
+
+    <Button
+        android:text="隐藏控件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bofangshiping"
+        android:layout_toRightOf="@+id/videoView2"
+        android:id="@+id/yincang" />
+
+    <Button
+        android:text="通知"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tongzhi"
+        android:layout_alignBottom="@+id/videoView2"
+        android:layout_alignRight="@+id/duihuakuang" />
+
+    <Button
+        android:text="弹出对话框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/duihuakuang"
+        android:layout_above="@+id/tongzhi"
+        android:layout_toRightOf="@+id/bofangshiping" />
+
+    <Button
+        android:text="跳转"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/duihuakuang"
+        android:layout_toRightOf="@+id/duihuakuang"
+        android:id="@+id/tiaozhuan" />
+
+
+</RelativeLayout>
