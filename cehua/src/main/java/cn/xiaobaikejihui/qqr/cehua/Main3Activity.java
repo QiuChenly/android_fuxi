@@ -107,7 +107,7 @@ public class Main3Activity extends AppCompatActivity {
                 BufferedReader reader;
                 HttpURLConnection conn = null;
                 try {
-                    URL url = new URL("http://192.168.1.119:8080/transportservice/type/jason/action/GetBusStationInfo.do");
+                    URL url = new URL("http://192.168.1.109:8080/transportservice/type/jason/action/GetBusStationInfo.do");
                     conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
                     conn.setDoInput(true);   //需要输入
@@ -208,7 +208,7 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    URL url=new URL("http://192.168.1.119:8080/transportservice/type/jason/action/GetAllSense.do");
+                    URL url=new URL("http://192.168.1.109:8080/transportservice/type/jason/action/GetAllSense.do");
                     HttpURLConnection httpURLConnection= (HttpURLConnection) url.openConnection();
                     httpURLConnection.setRequestMethod("POST");
                     httpURLConnection.setConnectTimeout(8000);

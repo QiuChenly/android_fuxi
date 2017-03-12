@@ -21,7 +21,9 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".Main3Activity" />
-        <activity android:name=".My_Car"></activity>
+        <activity android:name=".My_Car" />
+        <activity android:name=".Parking" />
+        <activity android:name=".MY_lukuang"></activity>
     </application>
 
 </manifest>

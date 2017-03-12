@@ -139,7 +139,7 @@ public class My_Car extends AppCompatActivity {
                 BufferedReader reader;
                 HttpURLConnection conn = null;
                 try {
-                    URL url = new URL("http://192.168.1.119:8080/transportservice/type/jason/action/GetCarAccountBalance.do");
+                    URL url = new URL("http://192.168.1.109:8080/transportservice/type/jason/action/GetCarAccountBalance.do");
                     conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("POST");
                     conn.setDoInput(true);   //需要输入
@@ -212,7 +212,7 @@ public class My_Car extends AppCompatActivity {
                     BufferedReader reader;
                     HttpURLConnection conn = null;
                     try {
-                        URL url = new URL("http://192.168.1.119:8080/transportservice/type/jason/action/SetCarAccountRecharge.do");
+                        URL url = new URL("http://192.168.1.109:8080/transportservice/type/jason/action/SetCarAccountRecharge.do");
                         conn = (HttpURLConnection) url.openConnection();
                         conn.setRequestMethod("POST");
                         conn.setDoInput(true);   //需要输入

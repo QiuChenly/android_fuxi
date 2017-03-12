@@ -68,7 +68,7 @@ public class Main2Activity extends Activity {
             @Override
             public void run() {
                 try {
-                    URL url=new URL("http://192.168.1.119:8080/transportservice/type/jason/action/GetAllSense.do");
+                    URL url=new URL("http://192.168.1.109:8080/transportservice/type/jason/action/GetAllSense.do");
                     HttpURLConnection httpURLConnection= (HttpURLConnection) url.openConnection();
                     httpURLConnection.setRequestMethod("POST");
                     httpURLConnection.setConnectTimeout(8000);
@@ -148,7 +148,7 @@ public class Main2Activity extends Activity {
 
                         @Override
                         public void run() {
-                            Uri uri = Uri.parse("http://ws.acgvideo.com/4/19/12562789-1.mp4?wsTime=1487054102&platform=pc&wsSecret2=4167256389ea164135653c11328c15ba&oi=659893187&rate=90");
+                            Uri uri = Uri.parse("http://ws.acgvideo.com/9/96/1218577-1.mp4?wsTime=1487242541&platform=pc&wsSecret2=337da7e6f81928de67ff988f84906750&oi=22206599&rate=60");
                             videoView.setVideoURI(uri);
                             videoView.start();
                             
@@ -167,7 +167,7 @@ public class Main2Activity extends Activity {
 
                         @Override
                         public void run() {
-                            Uri uri = Uri.parse("http://ws.acgvideo.com/7/bf/7454423-1.mp4?wsTime=1487053308&platform=pc&wsSecret2=611ddeaf931ad6919c303ffbfcee4216&oi=1698766306&rate=90");
+                            Uri uri = Uri.parse("http://ws.acgvideo.com/b/7d/821876-1.mp4?wsTime=1487242644&platform=pc&wsSecret2=a60c05f3e2fba9626123dd18d4612f6b&oi=1885046643&rate=60");
                             videoView.setVideoURI(uri);
                             videoView.start();
                             

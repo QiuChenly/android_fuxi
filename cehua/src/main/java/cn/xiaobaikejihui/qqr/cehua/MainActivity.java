@@ -73,21 +73,29 @@ public class MainActivity extends AppCompatActivity {
                         navigationView.setCheckedItem(R.id.c);
                         Intent intentMyCar=new Intent(MainActivity.this,My_Car.class);
                         startActivity(intentMyCar);
+                        //动画
+                        overridePendingTransition(R.anim.no1,R.anim.no1_exit);
                         break;
                     case R.id.r:
                         Toast.makeText(MainActivity.this,"我的路况",Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         navigationView.setCheckedItem(R.id.r);
+                        Intent intent5=new Intent(MainActivity.this,MY_lukuang.class);
+                        startActivity(intent5);
                         break;
                     case R.id.p:
                         Toast.makeText(MainActivity.this,"停车查询",Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
                         navigationView.setCheckedItem(R.id.p);
+                        Intent intent4=new Intent(MainActivity.this,Parking.class);
+                        startActivity(intent4);
+                        overridePendingTransition(R.anim.no2,R.anim.no2_exit);
                         break;
                     case R.id.b:
                         Toast.makeText(MainActivity.this,"公交查询",Toast.LENGTH_SHORT).show();
                         Intent intent1 = new Intent(MainActivity.this, Main3Activity.class);
                         startActivity(intent1);
+                        overridePendingTransition(R.anim.no3,R.anim.no3_exit);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         navigationView.setCheckedItem(R.id.b);
                         break;
